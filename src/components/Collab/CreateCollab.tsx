@@ -44,7 +44,7 @@ class CreateCollab extends React.Component <Props, State> {
 
   createCollab(e: any) {
     e.preventDefault()
-    console.log(this.props)
+    console.log(APIURL)
     fetch(`${APIURL}/collab/create`, {
       method: "POST",
       headers: {
